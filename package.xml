@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>stair_alerts</name>
+  <version>0.0.1</version> <!-- Updated version -->
+  <description>A ROS 2 package for stair alerts</description> <!-- Updated description -->
+  <maintainer email="sim30217@gmail.com">scsim</maintainer>
+  <license>Apache-2.0</license> <!-- Updated license, adjust as needed -->
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>ghost_manager_interfaces</depend> <!-- Added dependency for the Heartbeat message -->
+
+  <build_depend>ament_cmake</build_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>ghost_manager_interfaces</build_depend> <!-- Explicit build dependency -->
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>ghost_manager_interfaces</exec_depend> <!-- Runtime dependency -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
