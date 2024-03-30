@@ -16,7 +16,7 @@ void SoundPlayer::playSound() {
     std::lock_guard<std::mutex> lock(soundMutex);
     std::vector<std::string> devices = {"plughw:0,0", "plughw:1,0"};
     std::vector<std::thread> threads;
-
+    // TODO: Add mechanism to check available devices and their capabilities
     for (const auto& device : devices) {
         threads.emplace_back(&SoundPlayer::playSoundOnDevice, this, device);
     }
