@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(ghost_manager_interfaces REQUIRED) # Assuming this is a custom package for Heartbeat.msg
+find_package(ament_index_cpp REQUIRED)
 
 include_directories(
   include
@@ -31,6 +32,7 @@ add_executable(vision_mode_listener
 ament_target_dependencies(vision_mode_listener
   rclcpp
   ghost_manager_interfaces # Add this if your node subscribes to Heartbeat messages
+  ament_index_cpp 
 )
 
 # Link the sound_player library to the vision_mode_listener executable
