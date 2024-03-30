@@ -24,6 +24,7 @@ VisionModeListener::VisionModeListener() : Node("vision_mode_listener"), last_pl
         "/state/heartbeat", 10, std::bind(&VisionModeListener::heartbeatCallback, this, std::placeholders::_1));
     std::string package_share_directory = ament_index_cpp::get_package_share_directory("stair_alerts");
     std::string sound_file_path = package_share_directory + "/sounds/warning_conv.wav";
+    assert(!sound_file_path.empty()); // Ensure the sound file path is not empty
     soundPlayer = std::make_unique<SoundPlayer>(sound_file_path);
 }
 
