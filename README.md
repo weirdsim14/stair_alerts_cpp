@@ -32,3 +32,6 @@ Execute the `vision_mode_listener` node with the following command:
 
 ```bash
 ros2 run stair_alerts vision_mode_listener
+```
+
+## 1. TODO: Add assert, Pulseaudio
