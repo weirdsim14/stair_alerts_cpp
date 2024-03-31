@@ -8,7 +8,7 @@ The warning, "Do not follow the robot while it is ascending or descending stairs
 
 ### Prerequisites
 
-Ensure you have ROS 2 installed and configured on your system. This application was developed and tested with ROS 2 Foxy Fitzroy, but it should be compatible with newer versions.
+Ensure you have ROS 2 installed and configured on your system. This application was developed and tested with ROS 2 humble, but it should be compatible with newer versions.
 
 ### Building the Package
 
