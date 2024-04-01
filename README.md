@@ -35,3 +35,5 @@ ros2 run stair_alerts vision_mode_listener
 ```
 
 ## 1. TODO: Add assert, Pulseaudio
+- [x] Add assert
+- [x] Change to using pulseaudio
